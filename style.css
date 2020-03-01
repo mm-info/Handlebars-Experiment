@@ -1,12 +1,81 @@
+body {
+  background: #969696;
+  color: #000;
+  font-family: courier;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+h1,h2, li { font-size: .5rem; color: #222; }
+
 #completed-list-div {
   display: none;
 }
 
-.complete-task {
-  color: blue;
+ul#todo__list {
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: decimal;
+  text-align: left;
+  width: 400px;
+  margin: 3rem auto;
+  position: relative;
+}
+
+ul#todo__list li {
+  width: 300px;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+span.complete-task {
+  font-weight: normal;
+  position: absolute;
+  right: 0;
+  text-decoration: none;
+  color: #000;
+  background: rgb(148, 148, 148);
+  padding: 8px 8px;
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 11px;
+}
+
+span.complete-task:hover {
   cursor: pointer;
 }
 
-.completed {
+li.todo__item--completed {
   text-decoration: line-through;
+}
+
+input#todo__input {
+  border: 0;
+  outline: none;
+  padding: .25rem;
+  font-size: .5rem;
+  color: #222;
+  border-radius: 4px;
+  border: 1px solid #222;
+}
+
+button#todo__button {
+  font-weight: bold;
+  border: 0;
+  outline: none;
+  padding: .25rem;
+  font-size: .5rem;
+  color: #222;
+  border-radius: 4px;
+  border: 1px solid #222;
+}
+
+button#todo__button:hover {
+  cursor: pointer;
+}
+
+button#todo__button:active {
+
 }

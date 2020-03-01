@@ -5,22 +5,25 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello World, Once More</h1>
-
-  <h2>Favorite Things</h2>
-  <ul id="fav-list">
-    <li class="fav-thing">Dog Bites</li>
-    <li class="fav-thing">Bee Stings</li>
-    <li class="fav-thing">Feeling Bad</li>
+  <ul id="todo__list">
+    <li class="todo__item">Dog Bites</li>
+    <li class="todo__item">Bee Stings</li>
+    <li class="todo__item">Feeling Bad</li>
   </ul>
 
   <form>
-    <input id="new-thing" />
-    <input id="new-thing-button" type="submit" value="Create new thing"></submit>
+    <input id="todo__input" />
+    <button id="todo__button" type="submit">Create new to-do</submit>
   </form>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js"></script>
-  <script src="main.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script id="todo__handlebars" type="text/x-handlebars-template">
+    <li class="todo__handlebars--item">{{todoItem}}</li>
+  </script>
+
+
+
+  <script src="jquery-3.4.1.js" type="text/javascript"></script>
+  <script src="handlebars.js" type="text/javascript"></script>
+  <script src="main.js" type="text/javascript"></script>
 </body>
 </html>
